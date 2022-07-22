@@ -1,0 +1,133 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color-scheme: light dark;
+  color: black;
+
+  --gradient: linear-gradient(to top right, #ff3867, #ffc873, #d37ec6);
+}
+
+body {
+  background: var(--gradient);
+  min-block-size: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  padding-inline: 1rem;
+}
+
+.loading {
+  background-color: gray;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Card */
+
+#app {
+  max-inline-size: 450px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+header picture {
+  display: flex;
+  inline-size: 100%;
+}
+
+header .header-hero {
+  position: relative;
+}
+
+header .header-profile {
+  inline-size: 100px;
+  border-radius: 50%;
+  position: absolute;
+  inset-block-end: -50px;
+  border: 4px solid white;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+main .profile-name {
+  font-size: 24px;
+  margin: 0;
+  margin-block-start: 70px;
+}
+
+main .profile-btn {
+  background-color: transparent;
+  border: 2px solid teal;
+  border-radius: 24px;
+  display: flex;
+}
+
+main .profile-btn-item {
+  background-color: transparent;
+  text-decoration: none;
+  color: teal;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem 2rem 1rem;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+footer section article:not(:last-child) {
+  border-inline-end: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer section article h2 {
+  font-size: large;
+}
+
+footer section article h2,
+footer section article p {
+  margin: 0;
+}

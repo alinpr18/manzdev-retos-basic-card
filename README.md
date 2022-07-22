@@ -1,16 +1,14 @@
 # Reto #1 - Tarjeta de usuario
 
-El reto principalmente tiene unas normas a seguir para cumplirlo con exactitud, pero en mi caso, quise realizarlo en React y consumiendo API mas que todo para aprender en estas tecnologías.
+El reto principalmente tiene unas normas a seguir para cumplirlo con exactitud, pero en mi caso, quise realizarlo en Javascript.
 
 ## ¿Dónde encuentro el reto?
 
-En la siguiente página web [Lenguaje Js](https://lenguajejs.com/retos) puedes ver todos los retos por niveles para que te atrevas a realizarlos y añadir mas conocimientos en tu ruta de aprendizaje.
+En la siguiente página web [Lenguaje JS](https://lenguajejs.com/retos) puedes ver todos los retos por niveles para que te atrevas a realizarlos y proyectos a tu portafolio.
 
-## Tecnologías usadas
+## Tecnologías utilizadas
 
-- React
-- HTML
-- CSS
+- Javascript
 - Vite
 
 ## API Consumidas
