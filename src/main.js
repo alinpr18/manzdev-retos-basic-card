@@ -6,17 +6,17 @@ import { randomUser } from "./api";
   <header class="picture">
     <picture class="">
       <source media="(max-width: 375px)"
-          srcset="https://picsum.photos/450/200" height="150px" width="100%" />
-      <img height="200px" class="header-hero " src="https://picsum.photos/450/200" alt="header">
+          srcset="https://picsum.photos/450/200" height="150px" width="450px" />
+      <img rel="preconnect" height="200px" width="450px" class="header-hero " src="https://picsum.photos/450/200" alt="header">
     </picture>
-    <img class="header-profile" src=${await randomUser()} alt="profile">
+    <img rel="preconnect" class="header-profile" src=${await randomUser()} alt="profile">
   </header>
   <main>
     <h1 class="profile-name">Nombre de usuario</h1>
     <span>Ciudad, País</span>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque porro quis rerum tempore error distinctio ut molestiae. Voluptatibus ipsa in cum rem laboriosam ad praesentium facere porro, vero cumque consectetur.</p>
     <button class="profile-btn">
-      <a class="profile-btn-item" href="">Follow</a>
+      <a class="profile-btn-item" href="https://example.com">Follow</a>
     </button>
   </main>
   <footer>

@@ -85,7 +85,7 @@ main .profile-name {
 
 main .profile-btn {
   background-color: transparent;
-  border: 2px solid teal;
+  border: 2px solid #005e5e;
   border-radius: 24px;
   display: flex;
 }
@@ -93,7 +93,7 @@ main .profile-btn {
 main .profile-btn-item {
   background-color: transparent;
   text-decoration: none;
-  color: teal;
+  color: #005e5e;
   padding: 0.5rem 1.5rem;
   font-weight: bold;
 }
