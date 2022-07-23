@@ -1,9 +1,10 @@
 import "./style.css";
 import { randomUser } from "./api";
 
-document.querySelector("#app").innerHTML = /* html */ `
+(async function App() {
+  return (document.querySelector("#app").innerHTML = /* html */ `
   <header class="picture">
-    <picture class="loading">
+    <picture class="">
       <source media="(max-width: 375px)"
           srcset="https://picsum.photos/450/200" height="150px" width="100%" />
       <img height="200px" class="header-hero " src="https://picsum.photos/450/200" alt="header">
@@ -40,10 +41,5 @@ document.querySelector("#app").innerHTML = /* html */ `
     </article>
   </section>
   </footer>
-`;
-
-// Fake loading skeleton
-
-let $loading = document.querySelector("picture");
-
-setTimeout(() => $loading.classList.remove("loading"), 1000);
+`);
+})();
